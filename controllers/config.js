@@ -58,13 +58,15 @@ module.exports = {
                         model: request.models.environment,
                         where: {
                             name: request.params.environmentName
-                        }
+                        },
+                        required: true
                     },
                     {
                         model: request.models.service,
                         where: {
                             name: request.params.serviceName
-                        }
+                        },
+                        required: true
                     }
                 ]
             }

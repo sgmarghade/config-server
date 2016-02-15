@@ -7,7 +7,6 @@ var boom = require("boom");
 var service = require("../controllers/service");
 
 module.exports = [
-
     {
         path: "/services",
         method: "GET",
@@ -28,5 +27,4 @@ module.exports = [
         method:"GET",
         handler: service.getConfigsForId
     }
-
 ]
